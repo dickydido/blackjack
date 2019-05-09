@@ -153,13 +153,13 @@ deal.addEventListener('click', function () {
   var fullPointOne = userPointOne + userPointTwo;
   var firstCardElement = document.createElement('img');
   var secondCardElement = document.createElement('img');
-  firstCard.style = "border: 3px solid #fff; background-color: #fff;";
   firstCardElement.setAttribute('src', userCardOne);
   firstCard.appendChild(firstCardElement);
+  firstCard.style = "border: 3px solid #fff; background-color: #fff;";
   setTimeout(function (){
-    secondCard.style = "border: 3px solid #fff; background-color: #fff;";
     secondCardElement.setAttribute('src', userCardTwo);
     secondCard.appendChild(secondCardElement);
+    secondCard.style = "border: 3px solid #fff; background-color: #fff;";
   }, 200);
 
 
