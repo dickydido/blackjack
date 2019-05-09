@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.area {
+  margin: 30px auto;
+  display: block;
+  max-width: 600px;
+  max-height: 500px;
+}
+
+canvas {
+  background: #166837;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+}
+
+.card-one, .card-two, .card-three, .card-four, .card-five, .deal-one, .deal-two, .deal-three, .deal-four, .deal-five {
+  height: 87px;
+  width: 60.5px;
+  border: 3px solid #288e51;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+img {
+  height: 90px;
+}
+
+.dealer-cards {
+  position: relative;
+  top: 20px;
+  left: 231.5px;
+}
+
+.dealer-twists {
+  position: relative;
+  top: 30px;
+  left: 196px;
+}
+
+.user-cards {
+  position: relative;
+  top: 84px;
+  left: 231.5px;
+}
+
+.user-twists {
+  position: relative;
+  top: 74px;
+  left: 196px;
+}
+
+button#deal {
+  position: relative;
+  top: 140px;
+  left: 254.29px;
+  border-radius: 100%;
+  padding: 30px;
+  font-size: 14px;
+  background-color: red;
+  color: #fff;
+  outline: none;
+}
+
+button#deal:active {
+  background-color: #ff0000bf;
+  outline: none;
+  border-color: #fff;
+}
+
+input[value="Hit me!"], input[value="Stick"] {
+  border-radius: 20px;
+  position: relative;
+  top: 86px;
+  background-color: #1b90e2;
+  color: #fff;
+  outline: none;
+}
+
+input[value="Hit me!"]:active, input[value="Stick"]:active {
+  outline: none;
+  background-color: #3c9ce0;
+  border-color: #fff;
+}
+
+input[value="Hit me!"] {
+  left: 175px;
+  padding: 10px 15px;
+}
+
+input[value="Stick"] {
+  left: 288px;
+  padding: 10px 20.5px;
+}
