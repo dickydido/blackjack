@@ -4,7 +4,7 @@
 }
 
 .area {
-  margin: 30px auto;
+  margin: 10px auto;
   display: block;
   max-width: 600px;
   max-height: 500px;
@@ -99,4 +99,9 @@ input[value="Stick"] {
 
 footer {
   padding: 10px;
+  text-align: center;
+}
+
+#attribution {
+  display: inline-block;
 }

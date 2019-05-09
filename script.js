@@ -1,5 +1,10 @@
 window.onload = function(){
 
+  var today = new Date();
+  var year = document.createTextNode(today.getFullYear());
+  var copyright = document.querySelector('#copyright');
+  copyright.appendChild(year);
+
   var canvas = document.getElementById("my-canvas");
   var ctx = canvas.getContext("2d");
 
