@@ -8,6 +8,7 @@
   display: block;
   max-width: 600px;
   max-height: 500px;
+  padding-bottom: 150px;
 }
 
 canvas {
@@ -94,4 +95,8 @@ input[value="Hit me!"] {
 input[value="Stick"] {
   left: 288px;
   padding: 10px 20.5px;
+}
+
+footer {
+  padding: 10px;
 }

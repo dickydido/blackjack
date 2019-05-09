@@ -80,6 +80,14 @@ window.onload = function(){
   var fourthDealCard = document.querySelector('.deal-four');
   var fifthDealCard = document.querySelector('.deal-five');
 
+  //Creates the sound of the cards being dealt.
+  var dealSound = new Audio();
+  dealSound.src = "deal-effect.mp3";
+  var fastDealSound = new Audio();
+  fastDealSound.src = "fast-deal-effect.mp3";
+  var shuffleSound = new Audio();
+  shuffleSound.src = "shuffle-effect.mp3";
+
   //Adds function to deal the cards when button pressed.
 deal.addEventListener('click', function () {
 
@@ -155,12 +163,13 @@ deal.addEventListener('click', function () {
   var secondCardElement = document.createElement('img');
   firstCardElement.setAttribute('src', userCardOne);
   firstCard.appendChild(firstCardElement);
+  fastDealSound.play();
   firstCard.style = "border: 3px solid #fff; background-color: #fff;";
   setTimeout(function (){
     secondCardElement.setAttribute('src', userCardTwo);
     secondCard.appendChild(secondCardElement);
     secondCard.style = "border: 3px solid #fff; background-color: #fff;";
-  }, 200);
+  }, 100);
 
 
   var dealCardOne = cardVariation[a];
@@ -198,6 +207,7 @@ deal.addEventListener('click', function () {
     stickButton.style = "background-color: #a5a3a3;";
     twistButton.style = "background-color: #a5a3a3;";
     setTimeout(function (){
+      dealSound.play();
       firstDealCard.style = "border: 3px solid #fff; background-color: #fff;";
       firstDealCardElement.setAttribute('src', dealCardOne);
       firstDealCard.appendChild(firstDealCardElement);
@@ -217,6 +227,7 @@ deal.addEventListener('click', function () {
       stickButton.style = "background-color: #a5a3a3;";
       twistButton.style = "background-color: #a5a3a3;";
       setTimeout(function (){
+        dealSound.play();
         firstDealCard.style = "border: 3px solid #fff; background-color: #fff;";
         secondDealCard.style = "border: 3px solid #fff; background-color: #fff;";
         firstDealCardElement.setAttribute('src', dealCardOne);
@@ -236,6 +247,7 @@ deal.addEventListener('click', function () {
       stickButton.style = "background-color: #a5a3a3;";
       twistButton.style = "background-color: #a5a3a3;";
       setTimeout(function (){
+        dealSound.play();
         firstDealCard.style = "border: 3px solid #fff; background-color: #fff;";
         secondDealCard.style = "border: 3px solid #fff; background-color: #fff;";
         firstDealCardElement.setAttribute('src', dealCardOne);
@@ -404,6 +416,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
     if (counter == 0) {
 
       thirdCard.appendChild(thirdCardElement);
+      dealSound.play();
       thirdCard.style = "border: 3px solid #fff; background-color: #fff;";
 
       if (fullPointTwo > 21) {
@@ -422,6 +435,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
     } else if (counter == 1) {
 
       fourthCard.appendChild(fourthCardElement);
+      dealSound.play();
       fourthCard.style = "border: 3px solid #fff; background-color: #fff;";
 
       if (fullPointThree > 21) {
@@ -440,6 +454,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
     } else if (counter == 2) {
 
       fifthCard.appendChild(fifthCardElement);
+      dealSound.play();
       fifthCard.style = "border: 3px solid #fff; background-color: #fff;";
 
       twistButton.disabled = true;
@@ -464,10 +479,12 @@ var dealFullThree = dealFullTwo + dealPointFour;
     twistButton.disabled = true;
     stickButton.style = "background-color: #a5a3a3;";
     twistButton.style = "background-color: #a5a3a3;";
+    console.log('test');
 
     firstDealCard.style = "border: 3px solid #fff; background-color: #fff;";
     secondDealCard.style = "border: 3px solid #fff; background-color: #fff;";
     firstDealCardElement.setAttribute('src', dealCardOne);
+    dealSound.play();
     firstDealCard.appendChild(firstDealCardElement);
     secondDealCardElement.setAttribute('src', dealCardTwo);
     secondDealCard.appendChild(secondDealCardElement);
@@ -475,6 +492,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
     if (dealFullOne < 17) {
       setTimeout(function (){
         thirdDealCard.appendChild(thirdDealCardElement);
+        dealSound.play();
         thirdDealCard.style = "border: 3px solid #fff; background-color: #fff;";
         if (dealFullTwo > 21) {
           var dealBustOneElement = document.createElement('p');
@@ -488,6 +506,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
         } else if (dealFullTwo < 17) {
           setTimeout(function (){
             fourthDealCard.appendChild(fourthDealCardElement);
+            dealSound.play();
             fourthDealCard.style = "border: 3px solid #fff; background-color: #fff;";
             if (dealFullThree > 21) {
               var dealBustTwoElement = document.createElement('p');
@@ -501,6 +520,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
             } else if (dealFullThree < 17) {
               setTimeout(function (){
                 fifthDealCard.appendChild(fifthDealCardElement);
+                dealSound.play();
                 fifthDealCard.style = "border: 3px solid #fff; background-color: #fff;";
                 if (dealFullFour > 21) {
                   var dealBustThreeElement = document.createElement('p');
