@@ -753,8 +753,6 @@ var dealFullThree = dealFullTwo + dealPointFour;
       }, 1500);
     }
   });
-
-test
 });
 
 }
