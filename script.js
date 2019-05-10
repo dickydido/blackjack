@@ -271,6 +271,18 @@ deal.addEventListener('click', function () {
   //Counter determines how many cards on the table.
   var counter = 0;
 
+  while (fullPointOne > 21) {
+    if (userPointOne == 11) {
+      fullPointOne -= 10;
+      userPointOne = 1;
+    } else if (userPointTwo == 11) {
+      fullPointOne -= 10;
+      userPointTwo = 1;
+    } else {
+      break;
+    }
+  }
+
   var twistOne = cardVariation[c];
   var userPointThree = pointScale[c];
   var fullPointTwo = fullPointOne + userPointThree;
@@ -342,6 +354,18 @@ deal.addEventListener('click', function () {
 
   var fifthCardElement = document.createElement('img');
   fifthCardElement.setAttribute('src', twistThree);
+
+  while (dealFullOne > 21) {
+    if (dealPointOne == 11) {
+      dealFullOne -= 10;
+      dealPointOne = 1;
+    } else if (dealPointTwo == 11) {
+      dealFullOne -= 10;
+      dealPointTwo = 1;
+    } else {
+      break;
+    }
+  }
 
   var dealTwistOne = cardVariation[f];
     var dealPointThree = pointScale[f];
