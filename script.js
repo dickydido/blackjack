@@ -101,7 +101,7 @@ deal.addEventListener('click', function () {
   deal.style = "background-color: #a5a3a3;";
 
   //Create text box to be used later.
-  var textPosition = document.querySelector('.dealt-cards');
+  var textPosition = document.querySelector('.area');
   var textBox = document.createElement('div');
   textBox.setAttribute('class', 'text-box');
 
@@ -204,6 +204,7 @@ deal.addEventListener('click', function () {
   stickButton.value = 'Stick';
 
    dealt.appendChild(twistButton);
+   deal.before(twistButton);
   dealt.appendChild(stickButton);
 
   if (fullPointOne == 21 && dealFullOne == 21) {

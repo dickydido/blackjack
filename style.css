@@ -6,9 +6,8 @@
 .area {
   margin: 10px auto;
   display: block;
-  max-width: 600px;
-  max-height: 500px;
-  padding-bottom: 150px;
+  width: 600px;
+  height: 500px;
 }
 
 canvas {
@@ -55,12 +54,10 @@ img {
 }
 
 button#deal {
-  position: relative;
-  top: 140px;
-  left: 254.29px;
   border-radius: 100%;
   padding: 30px;
   font-size: 14px;
+  margin: 0 10px;
   background-color: red;
   color: #fff;
   outline: none;
@@ -74,10 +71,10 @@ button#deal:active {
 
 input[value="Hit me!"], input[value="Stick"] {
   border-radius: 20px;
-  position: relative;
-  top: 86px;
   background-color: #1b90e2;
   color: #fff;
+  width: 70px;
+  padding: 10px;
   outline: none;
 }
 
@@ -87,14 +84,29 @@ input[value="Hit me!"]:active, input[value="Stick"]:active {
   border-color: #fff;
 }
 
-input[value="Hit me!"] {
-  left: 175px;
-  padding: 10px 15px;
+.text-box {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 40px;
 }
 
-input[value="Stick"] {
-  left: 288px;
-  padding: 10px 20.5px;
+.text-box p {
+  display: inline-block;
+}
+
+.text-box a {
+  float: right;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.dealt-cards {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 footer {
