@@ -57,6 +57,7 @@ button#deal {
   border-radius: 100%;
   padding: 30px;
   font-size: 14px;
+  border: none;
   margin: 0 10px;
   background-color: red;
   color: #fff;
@@ -75,6 +76,7 @@ input[value="Hit me!"], input[value="Stick"] {
   color: #fff;
   width: 70px;
   padding: 10px;
+  border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
