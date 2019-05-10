@@ -107,6 +107,7 @@ input[value="Hit me!"]:active, input[value="Stick"]:active {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  font-size: 0;
 }
 
 footer {
