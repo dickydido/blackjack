@@ -75,6 +75,7 @@ input[value="Hit me!"], input[value="Stick"] {
   color: #fff;
   width: 70px;
   padding: 10px;
+  -webkit-appearance: none;
   outline: none;
 }
 
