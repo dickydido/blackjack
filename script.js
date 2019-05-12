@@ -241,7 +241,7 @@ deal.addEventListener('click', function () {
         secondDealCardElement.setAttribute('src', dealCardTwo);
         secondDealCard.appendChild(secondDealCardElement);
         var blackjackElement = document.createElement('p');
-        var blackjackText = document.createTextNode(`Blackjack! You Win!`);
+        var blackjackText = document.createTextNode(`Blackjack! You win!`);
         blackjackElement.appendChild(blackjackText);
         textBox.appendChild(blackjackElement);
         textBox.appendChild(playAgainElement);
