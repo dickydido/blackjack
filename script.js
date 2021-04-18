@@ -193,6 +193,8 @@ deal.addEventListener('click', function () {
     secondDealCard.appendChild(secondDealCardElement);
   }, 200);
 
+  $('.user-score').text('Current Hand: ' + FullPointOne);
+
   //Adds button for twist action.
   var twistButton = document.createElement('input');
   twistButton.type = 'button';

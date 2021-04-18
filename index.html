@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <title>Dicky's Blackjack in Javascript</title>
-  </head>
-  <body>
-    <div class="area">
-      <canvas id="my-canvas"></canvas>
-      <div class="dealer-cards">
-        <div class="deal-one"></div>
-        <div class="deal-two"></div>
-      </div>
-      <div class="dealer-twists">
-        <div class="deal-three"></div>
-        <div class="deal-four"></div>
-        <div class="deal-five"></div>
-      </div>
-      <div class="user-twists">
-        <div class="card-three"></div>
-        <div class="card-four"></div>
-        <div class="card-five"></div>
-      </div>
-      <div class="user-cards">
-        <div class="card-one"></div>
-        <div class="card-two"></div>
-      </div>
-    </div>
-    <div class="dealt-cards">
-      <button id="deal">Deal</button>
-    </div>
-    <footer>
-      <p id="attribution">Sound effects obtained from
-        <a href="https://www.zapsplat.com">https://www.zapsplat.com</a>
-      </p>
-      <p id="copyright">&copy; Richie Withers,
-      </p>
-    </footer>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Dicky's Blackjack in Javascript</title>
+    </head>
+    <body>
+        <div class="area">
+            <canvas id="my-canvas"></canvas>
+            <div class="dealer-cards">
+                <div class="deal-one"></div>
+                <div class="deal-two"></div>
+            </div>
+            <div class="dealer-twists">
+                <div class="deal-three"></div>
+                <div class="deal-four"></div>
+                <div class="deal-five"></div>
+            </div>
+            <div class="user-twists">
+                <div class="card-three"></div>
+                <div class="card-four"></div>
+                <div class="card-five"></div>
+            </div>
+            <div class="user-cards">
+                <div class="card-one"></div>
+                <div class="card-two"></div>
+            </div>
+            <p class="user-score"></p>
+        </div>
+        <div class="dealt-cards">
+            <button id="deal">Deal</button>
+        </div>
+        <footer>
+            <p id="attribution">Sound effects obtained from
+                <a href="https://www.zapsplat.com">https://www.zapsplat.com</a>
+            </p>
+            <p id="copyright">&copy; Richie Withers,
+            </p>
+        </footer>
 
-  </body>
+    </body>
 </html>
