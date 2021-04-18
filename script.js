@@ -463,6 +463,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
             textBox.appendChild(tryAgainElement);
             textPosition.parentNode.insertBefore(textBox, textPosition.nextSibling);
         }
+        $('.user-score').text('Current Hand: ' + fullPointTwo);
       counter++;
     } else if (counter == 1) {
 
@@ -482,6 +483,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
         textBox.appendChild(tryAgainElement);
         textPosition.parentNode.insertBefore(textBox, textPosition.nextSibling);
       }
+      $('.user-score').text('Current Hand: ' + fullPointThree);
       counter++;
     } else if (counter == 2) {
 
@@ -501,6 +503,7 @@ var dealFullThree = dealFullTwo + dealPointFour;
         textBox.appendChild(tryAgainElement);
         textPosition.parentNode.insertBefore(textBox, textPosition.nextSibling);
       }
+      $('.user-score').text('Current Hand: ' + fullPointFour);
       counter++;
     }
   });
