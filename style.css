@@ -89,13 +89,13 @@ input[value="Hit me!"]:active, input[value="Stick"]:active {
   border-color: #fff;
 }
 
-.text-box {
+.text-box, .texty-box {
   max-width: 600px;
   margin: 0 auto;
   height: 40px;
 }
 
-.text-box p {
+.text-box p, .texty-box p {
   display: inline-block;
 }
 
